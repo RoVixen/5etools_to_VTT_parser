@@ -10,6 +10,6 @@ const buttonParse=document.getElementById("parse");
 buttonParse?.addEventListener("click",(e)=>{
     const data5e=JSON.parse(form5e?.json_input?.value || "{}")
 
-    if(formVTT?.json_input?.value)
+    if(formVTT?.json_input?.value!==undefined)
     formVTT.json_input.value=JSON.stringify(parseData5eToVTT(data5e));
 })

@@ -1,12 +1,21 @@
 "use strict";
-function parseData5eToVTT(json) {
+function parseData5eToVTT(tools5eSrcData) {
     let toReturn = {
         schema_version: 3,
-        type: json.hasToken ? "character" : "item",
+        type: tools5eSrcData.hasToken ? "character" : "item",
     };
-    if (json.hasToken)
-        toReturn = Object.assign(Object.assign({}, toReturn), { character: {
-                name: json.name
-            } });
+    if (tools5eSrcData.hasToken)
+        toReturn = parseData5eToVTT;
     return toReturn;
+}
+function parseData5eToVTTCreature(t5eDataCreature) {
+    return "ADASDAS";
+}
+function AttirbsMakeNPCType(tools5eSrcData) {
+    return {
+        name: "string",
+        current: "string",
+        max: "string",
+        id: "string"
+    };
 }
