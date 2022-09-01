@@ -1,0 +1,30 @@
+textarea,
+body{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+textarea{
+    font-size: 1.2rem;
+}
+
+section{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+section form{
+    min-width: 40%;
+}
+section form textarea{
+    max-width: 100%;
+    min-width: 90%;
+}
+
+section button{
+    cursor: pointer;
+    font-size: 2.1rem;
+    
+}
