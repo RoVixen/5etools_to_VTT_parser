@@ -10,9 +10,19 @@ export function parseData5eToVTTCreature(creat:tools5eSourceDataCreature):any{
     return {
         character:{
             name: creat.name,
+            oldId:generateOldId(),
+            avatar: "",
+            bio: "",
+            gmnotes: "",
+            defaulttoken: "",
+            tags: "",
+            controlledby: "",
+            inplayerjournals: "",
+            
             attribs:[
                 ...attribNPCType(creat)
-            ]
+            ],
+            abilities: []
         }
     }
 }
