@@ -12,3 +12,7 @@ export function parseData5eToVTTCreature(t5eDataCreature:tools5eSourceDataCreatu
         }
     }
 }
+
+function attribNPCType(t5eDataCreature:tools5eSourceDataCreature){
+    return ""
+}
