@@ -7,4 +7,4 @@ export function generateOldId():string{
     .fill("-")
     .map(()=>chars[Math.floor(Math.random()*chars.length)])
     .join("")
-}
+}aaa
