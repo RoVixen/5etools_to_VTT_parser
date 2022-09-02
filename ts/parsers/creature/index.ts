@@ -20,6 +20,7 @@ export function parseData5eToVTTCreature(creat:tools5eSourceDataCreature):any{
             inplayerjournals: "",
             
             attribs:[
+                makeAttrib("npc","1"),
                 ...attribNPCType(creat)
             ],
             abilities: []
@@ -50,5 +51,12 @@ function attribNPCType(creat:tools5eSourceDataCreature):Array<VTTAttrib>{
     
     return [
         makeAttrib("npc_type",size+" "+type+", "+alignment)
+    ]
+}
+
+
+function attribAC(creat:tools5eSourceDataCreature):Array<VTTAttrib>{
+    return [
+        makeAttrib("npc_ac","99")
     ]
 }
