@@ -16,9 +16,7 @@ buttonParse === null || buttonParse === void 0 ? void 0 : buttonParse.addEventLi
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseData5eToVTT = void 0;
-function parseData5eToVTTCreature(t5eDataCreature) {
-    return "ADASDAS";
-}
+const creature_1 = require("./parsers/creature");
 function AttirbsMakeNPCType(tools5eSrcData) {
     return {
         name: "string",
@@ -33,9 +31,18 @@ function parseData5eToVTT(tools5eSrcData) {
         type: tools5eSrcData.hasToken ? "character" : "item",
     };
     if (tools5eSrcData.hasToken)
-        toReturn = parseData5eToVTT;
+        toReturn = Object.assign(Object.assign({}, toReturn), (0, creature_1.parseData5eToVTTCreature)(tools5eSrcData));
     return toReturn;
 }
 exports.parseData5eToVTT = parseData5eToVTT;
+
+},{"./parsers/creature":3}],3:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.parseData5eToVTTCreature = void 0;
+function parseData5eToVTTCreature(t5eDataCreature) {
+    return;
+}
+exports.parseData5eToVTTCreature = parseData5eToVTTCreature;
 
 },{}]},{},[1]);
