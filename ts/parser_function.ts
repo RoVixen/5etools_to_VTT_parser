@@ -1,20 +1,6 @@
-interface tools5eSourceData extends Object{
-    hasToken?:boolean
-}
-interface tools5eSourceDataForCreature extends tools5eSourceData{
-    hasToken:true
-    name:string
-    size:Array<string>
-	type:string | { type: string, tags:Array<string> }
-    alignment:Array<string>
-}
+import { tools5eSourceData, tools5eSourceDataForCreature } from "./interfaces/5etools_formats"
+import { VTTAttrib } from "./interfaces/VTT_formats";
 
-interface VTTAttrib{
-    name:string
-    current:string
-    max:string
-    id:string
-}
 function parseData5eToVTTCreature(t5eDataCreature:tools5eSourceDataForCreature):any{
     return "ADASDAS"
 }
