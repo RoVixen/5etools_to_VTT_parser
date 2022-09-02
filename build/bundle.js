@@ -44,7 +44,9 @@ function parseData5eToVTTCreature(t5eDataCreature) {
     return {
         character: {
             name: t5eDataCreature.name,
-            attribs: []
+            attribs: [
+                "asdasd"
+            ]
         }
     };
 }
