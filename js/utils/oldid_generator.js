@@ -10,4 +10,3 @@ function generateOldId() {
         .join("");
 }
 exports.generateOldId = generateOldId;
-s;
