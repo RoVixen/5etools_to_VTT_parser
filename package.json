@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc --watch"
+    "watch:tsc": "tsc --watch",
+    "watch:wfy": "npx watchify js/app.js -o build/bundle.js"
   },
   "author": "",
   "license": "ISC"

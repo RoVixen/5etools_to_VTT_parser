@@ -1,9 +1,11 @@
-interface HTMLElement{
+import { parseData5eToVTT } from "./parser_function";
+
+interface HTMLParsingForm extends HTMLElement{
     json_input?:HTMLTextAreaElement
 }
 
-const form5e: HTMLElement | null = document.getElementById("5etools_json_form");
-const formVTT: HTMLElement | null = document.getElementById("VTT_json_form");
+const form5e: null | HTMLParsingForm = document.getElementById("5etools_json_form");
+const formVTT: HTMLParsingForm | null = document.getElementById("VTT_json_form");
 
 const buttonParse=document.getElementById("parse");
 
