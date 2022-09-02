@@ -11,5 +11,4 @@ export function parseData5eToVTTCreature(t5eDataCreature:tools5eSourceDataCreatu
             ]
         }
     }
-    const secs="ASDASd"
 }
