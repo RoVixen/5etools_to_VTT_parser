@@ -16,7 +16,7 @@ export function parseData5eToVTT(tools5eSrcData:tools5eSourceData):object{
     let toReturn:object={
         schema_version: 3,
         type:tools5eSrcData.hasToken?"character":"item",
-    };
+    }
 
     if(tools5eSrcData.hasToken)
     toReturn={
